@@ -1,6 +1,6 @@
 # IBN-Net.mxnet
-A MXNet implementation of IBN-Net (Resnet-IBN-a)
-(**Resnet-IBN-a 50,101,152**)
+A MXNet implementation of IBN-Net (Resnet-IBN-a, Resnext-IBN-a, Resnext-IBN-b)
+(**Resnet-IBN-a 50,101,152, Resnext-IBN-a 50,101,152, Resnext-IBN-b 50,101,152**)
 
 This is a [MXNet](http://mxnet.io/) implementation of IBN-Net (**Resnet-IBN-a 50,101,152**) architecture as described in the paper [Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net](https://arxiv.org/pdf/1807.09441.pdf) proposed by [Xingang Pan](https://github.com/XingangPan), Ping Luo, Jianping Shi, and Xiaoou Tang. This paper is accepted by ECCV 2018. They won the 1st place on the WAD 2018 Challenge Drivable Area track with this IBN-Net block.
 
@@ -13,6 +13,8 @@ This is an illustration of a Instance-batch normalizzation (IBN) block.
 ![](IBN_block.png) 
 
 The Resnet-IBN-a is implemented according to the (b) IBN-a. Please note, our Resnet implementation is followed "Identity Mappings in Deep Residual Networks",[resnet-v2](https://arxiv.org/abs/1603.05027v3). It is slightly different than author's pytorch version [resnet-v1](https://arxiv.org/abs/1512.03385v1).
+
+The Resnext-IBN-b is implemented according to the (c) IBN-b.
 
 As the name implies, batch normalization [(BN)](https://arxiv.org/abs/1502.03167v3) and instance normalization [(IN)](https://arxiv.org/abs/1701.02096v2) are carefully unified in a single deep architecture.
 
@@ -54,8 +56,6 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 
 ## TO DO LIST
 
-**Resnext-IBN-a 50, 101, 152**.
-
 **SE-Resnet-IBN-a 50, 101, 152**.
 
 **Densenet-IBN-a 169**.
@@ -71,3 +71,11 @@ The training procedure is ongoing. So, I hope anyone who are mxnet fun can test 
 [4]  Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky. ["Instance Normalization: The Missing Ingredient for Fast Stylization"](https://arxiv.org/abs/1607.08022v3)
 
 [5] [PyTorch implementation](https://github.com/XingangPan/IBN-Net/blob/master/models/imagenet/resnet_ibn_a.py)
+
+[6]  Saining Xie, Ross Girshick, Piotr Dollar, Zhuowen Tu, and Kaiming He. ["Aggregated Residual Transformations for Deep Neural Networks"](https://arxiv.org/pdf/1611.05431v2.pdf)
+
+[7]  Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. ["Deep Residual Learning for Image Recognition"](https://arxiv.org/pdf/1512.03385v1.pdf)
+
+[8]  Jie Hu, Li Shen, and Gang Sun. ["Squeeze-and-Excitation Networks"](https://arxiv.org/pdf/1709.01507.pdf)
+
+[9]  Xiangang Pan, Ping Luo, Jianping Shi, and Xiaoou Tang. ["Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net"](https://arxiv.org/pdf/1807.09441.pdf)
