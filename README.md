@@ -27,7 +27,7 @@ Jie Hu, Li Shen, Gang Sun. ["Squeeze-and-Excitation Networks"] (https://arxiv.or
 
 (c) A dropout layer (with a drop ratio of 0.2) was inserted before the classifier layer to prevent overfitting.
 
-(d) Label-smoothing regularization (as introduced in Christian Szegedy et. al. "Rethinking the Inception Architecture for Computer Vision") was used during training.
+(d) Label-smoothing regularization (as introduced in Christian Szegedy et. al. ["Rethinking the Inception Architecture for Computer Vision"](https://arxiv.org/pdf/1512.00567v3.pdf)) was used during training.
 
 So we called it as **resnext_w_d_v2**
 
