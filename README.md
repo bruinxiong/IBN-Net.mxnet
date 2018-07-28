@@ -18,6 +18,17 @@ The Resnext-IBN-b is implemented according to the (c) IBN-b.
 
 As the name implies, batch normalization [(BN)](https://arxiv.org/abs/1502.03167v3) and instance normalization [(IN)](https://arxiv.org/abs/1701.02096v2) are carefully unified in a single deep architecture.
 
+We modified resnext architecture as illustrated in following paper
+Jie Hu, Li Shen, Gang Sun. ["Squeeze-and-Excitation Networks"] (https://arxiv.org/pdf/1709.01507v1.pdf)
+(a) The first 7x7 convoluational layer was replaced with three consecutive 3x3 convolutional layers.
+
+(b) The down-sampling projection 1x1 with stride-2 convolution was replaced with a 3x3 stride-2 convolution to preserve information.
+
+(c) A dropout layer (with a drop ratio of 0.2) was inserted before the classifier layer to prevent overfitting.
+
+(d) Label-smoothing regularization (as introduced in Christian Szegedy et. al. "Rethinking the Inception Architecture for Computer Vision") was used during training.
+
+So we called it as resnext_w_d_v2
 
 ## Requirements
 
