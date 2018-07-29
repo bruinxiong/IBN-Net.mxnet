@@ -8,7 +8,7 @@ This is a [MXNet](http://mxnet.io/) implementation of IBN-Net (**Resnet-IBN-a 50
 
 The author's pytorch implementation can be found in his [repo](https://github.com/XingangPan/IBN-Net) on GitHub.
 
-This is an illustration of a Instance-batch normalizzation (IBN) block.
+This is an illustration of a Instance-batch normalization (IBN) block.
 
 ![](IBN_block.png) 
 
