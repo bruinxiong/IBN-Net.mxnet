@@ -1,5 +1,5 @@
 # IBN-Net.mxnet
-A MXNet implementation of IBN-Net (Resnet-IBN-a, Resnext-IBN-a, Resnext-IBN-b)
+A MXNet implementation of IBN-Net (Resnet-IBN-a, Resnext-IBN-a, Resnext-IBN-b).  
 (**Resnet-IBN-a 50,101,152, Resnext-IBN-a 50,101,152, Resnext-IBN-b 50,101,152**)
 
 This is a [MXNet](http://mxnet.io/) implementation of IBN-Net (**Resnet-IBN-a 50,101,152**) architecture as described in the paper [Two at Once: Enhancing Learning and Generalization Capacities via IBN-Net](https://arxiv.org/pdf/1807.09441.pdf) proposed by [Xingang Pan](https://github.com/XingangPan), Ping Luo, Jianping Shi, and Xiaoou Tang. This paper is accepted by ECCV 2018. They won the 1st place on the WAD 2018 Challenge Drivable Area track with this IBN-Net block.
